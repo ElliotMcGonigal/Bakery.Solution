@@ -22,7 +22,13 @@ namespace Bakery.Tests
     public void HowMuchIsThePastryBeforeTheDiscount()
     {
       Pastry testPastry = new Pastry();
-      Assert.AreEqual(2,testPastry.PastryCost(1));
+      Assert.AreEqual(2, testPastry.PastryCost(1));
+    }
+    [TestMethod]
+    public void HowMuchIsThePastryAfterTheDiscount()
+    {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(5, testPastry.PastryCost(3));
     }
   }
 }
