@@ -10,8 +10,11 @@ namespace Bakery.Models
       return ((bread * 5) - (breadCostDivisor * 5));
     }
   }
-  // public class Pastry
-  // {
-    
-  // }
+  public class Pastry
+  {
+    public int PastryCost(int pastry)
+    {
+      return 0;
+    } 
+  }
 }
