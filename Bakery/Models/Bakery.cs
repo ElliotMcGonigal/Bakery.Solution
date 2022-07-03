@@ -6,7 +6,8 @@ namespace Bakery.Models
   {
     public int BreadCost(int bread)
     {
-      return (bread * 5);
+      int breadCostDivisor = Convert.ToInt32(Math.Floor(Convert.ToDouble(bread) / 3));
+      return ((bread * 5) - (breadCostDivisor * 5));
     }
   }
   // public class Pastry
