@@ -6,7 +6,7 @@ namespace Bakery.Models
   {
     public int BreadCost(int bread)
     {
-      return 0;
+      return (bread * 5);
     }
   }
   // public class Pastry
