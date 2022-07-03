@@ -14,7 +14,8 @@ namespace Bakery.Models
   {
     public int PastryCost(int pastry)
     {
-      return (pastry * 2);
+      int pastryCostDivisor = Convert.ToInt32(Math.Floor(Convert.ToDouble(pastry) / 3));
+      return ((pastry * 2) - (pastryCostDivisor));
     } 
   }
 }
