@@ -4,18 +4,28 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int BreadCost(int bread)
+    public int BreadCount {get; set;}
+    public Bread (int count)
     {
-      int breadCostDivisor = Convert.ToInt32(Math.Floor(Convert.ToDouble(bread) / 3));
-      return ((bread * 5) - (breadCostDivisor * 5));
+      BreadCount = count;
+    }
+    public int BreadCost()
+    {
+      int breadCostDivisor = Convert.ToInt32(Math.Floor(Convert.ToDouble(BreadCount) / 3));
+      return ((BreadCount * 5) - (breadCostDivisor * 5));
     }
   }
   public class Pastry
   {
-    public int PastryCost(int pastry)
+    public int PastryCount {get; set;}
+    public Pastry (int count)
     {
-      int pastryCostDivisor = Convert.ToInt32(Math.Floor(Convert.ToDouble(pastry) / 3));
-      return ((pastry * 2) - (pastryCostDivisor));
+      PastryCount = count;
+    }
+    public int PastryCost()
+    {
+      int pastryCostDivisor = Convert.ToInt32(Math.Floor(Convert.ToDouble(PastryCount) / 3));
+      return ((PastryCount * 2) - (pastryCostDivisor));
     } 
   }
 }

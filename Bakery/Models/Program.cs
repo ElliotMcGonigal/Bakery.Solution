@@ -12,9 +12,9 @@ namespace Pierres
       int loavesOfBread = int.Parse(Console.ReadLine());
       Console.WriteLine("How many PASTRIES would you like?(enter '0' for none, please enter only a number)");
       int numberOfPastries = int.Parse(Console.ReadLine());
-      Bread bread = new Bread();
-      Pastry pastry = new Pastry();
-      int totalPrice = bread.BreadCost(loavesOfBread) + pastry.PastryCost(numberOfPastries);
+      Bread bread = new Bread(loavesOfBread);
+      Pastry pastry = new Pastry(numberOfPastries);
+      int totalPrice = bread.BreadCost() + pastry.PastryCost();
       Console.WriteLine("Your total cost will be $" + totalPrice + "! Enjoy your bakery bounty!");
     }
   }

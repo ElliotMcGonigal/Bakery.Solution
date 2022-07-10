@@ -12,6 +12,7 @@ This application will accept user inputs to order food at a bakery.
 3. Clone this repo by entering into GitBash 'git clone https://github.com/ElliotMcGonigal/Bakery.Solution'
 4. In the terminal, navigate to the file you just cloned.
 5. Enter 'dotnet build' into the terminal
+6. Navigate to the test directory under Bakery.Tests and run 'dotnet test' in the terminal
 6. Enter 'dotnet run' into the terminal
 7. Now use the console to interact with the program!
 ## Known Bugs
